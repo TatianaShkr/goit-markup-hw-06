@@ -168,28 +168,36 @@ img {
 
 /*Section1*/
 .section {
+  /*  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/people-office.jpg);*/
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/people-office.jpg);
+    url(../images/fonmob1x.jpg);
   background-color: #2e2f42;
-  padding: 188px 0;
+  /*padding: 188px 0;*/
+  padding: 72px 52px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  max-width: 1440px;
-  margin: auto;
+  /*max-width: 1440px;*/
+  max-width: 320px;
+  /*margin: auto;*/
 }
 
 .page-title {
   font-weight: 700;
-  font-size: 56px;
-  line-height: 107%;
+  /*font-size: 56px;
+  line-height: 107%;*/
+  font-size: 36px;
+  line-height: 111%;
   letter-spacing: 0.02em;
   text-align: center;
   color: #ffffff;
   margin-left: auto;
   margin-right: auto;
-  max-width: 496px;
-  margin-bottom: 48px;
+  /*max-width: 496px;*/
+  max-width: 216px;
+  /*margin-bottom: 48px;*/
+  margin-bottom: 72px;
 }
 
 .button {
@@ -380,6 +388,7 @@ img {
 .list {
   background: #ffffff;
   /*width: calc((100% - 72px) / 4);*/
+  width: 288px;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16),
@@ -417,6 +426,7 @@ img {
 }
 
 .portfolio-list-item {
+  width: 288px;
   /*width: calc((100% - 2*24px) /3);*/
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -957,7 +967,7 @@ img {
   }
 
   .portfolio-list-item {
-    width: calc((100% - 3*24px) /2);
+    width: calc((100% - 24px) /2);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
@@ -987,9 +997,11 @@ img {
   }
 }
 
+/*---section3*/
+
 @media screen and (min-width: 768px) {
   .team-container {
-    padding: 96px 108px;
+    padding: 0 108px;
     margin: 0 auto;
   }
 
