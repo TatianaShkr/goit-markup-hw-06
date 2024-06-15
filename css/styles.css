@@ -794,7 +794,7 @@ img {
 
 }
 
-/*madal*/
+/*modal*/
 .modal-overlay {
   background-color: rgba(46, 47, 66, 0.4);
   position: fixed;
@@ -818,14 +818,18 @@ img {
   height: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 408px;
-  min-height: 584px;
+  /*width: 408px;*/
+  width: 288px;
+  /* min-height: 584px;*/
+  height: 623px;
   background: #fcfcfc;
   border-radius: 4px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 72px 24px 24px 24px;
-  overflow-y: auto;
+  /*padding: 72px 24px 24px 24px;
+  */
+  padding: 72px 16px 24px 16px;
+  display: auto;
 }
 
 .modal-overlay.is-open {
@@ -949,7 +953,8 @@ img {
   outline: transparent;
   background-color: transparent;
   border-radius: 4px;
-  width: 360px;
+  /*width: 360px;*/
+  width: 100%;
   height: 120px;
   resize: none;
   font-size: 12px;
@@ -964,6 +969,8 @@ img {
 }
 
 .label-checkbox {
+  display: flex;
+  align-items: center;
   font-weight: 400;
   font-size: 12px;
   line-height: 117%;
@@ -1007,6 +1014,8 @@ img {
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   margin-right: 8px;
+
+  flex-shrink: 0;
 }
 
 .checkbox:checked+.label-checkbox>.modal-span {
@@ -1021,6 +1030,11 @@ img {
 
 .checkbox-svg {
   transition: fill 2 50ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox-mob {
+  width: 100%;
+
 }
 
 .modal-text-check {
@@ -1291,6 +1305,14 @@ img {
   .adress-ul {
     display: block;
     gap: 40px;
+
+  }
+
+  .adress-title {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 117%;
+    letter-spacing: 0.04em;
   }
 
   .button-menu-open {
@@ -1304,7 +1326,7 @@ img {
 
 @media screen and (min-width: 1158px) {
   .container {
-    width: 1158;
+    width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
   }
@@ -1319,14 +1341,14 @@ img {
   }
 }
 
-@media screen and (win-width: 768px) {
+@media screen and (min-width: 768px) {
 
-  /* .container {
+  .container {
     width: 768px;
     padding: 0 16px;
     margin: 0 auto;
   }
-*/
+
   .section {
     max-width: 768px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
@@ -1340,5 +1362,72 @@ img {
     line-height: 107%;
     max-width: 496px;
     margin-bottom: 36px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+  .section {
+    max-width: 1440px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/people-office.jpg);
+    padding: 188px 0;
+    margin: auto;
+  }
+
+  .page-title {
+    font-size: 56px;
+    line-height: 107%;
+    max-width: 496px;
+    margin-bottom: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    height: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fcfcfc;
+    border-radius: 4px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: auto;
+    width: 408px;
+    min-height: 584px;
+    padding: 72px 24px 24px 24px;
+  }
+
+  .modal-textarea {
+    width: 360px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    height: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fcfcfc;
+    border-radius: 4px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: auto;
+    width: 408px;
+    min-height: 584px;
+    padding: 72px 24px 24px 24px;
+  }
+
+  .modal-textarea {
+    width: 360px;
   }
 }
