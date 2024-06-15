@@ -1318,3 +1318,27 @@ img {
     margin-right: 76px;
   }
 }
+
+@media screen and (win-width: 768px) {
+
+  /* .container {
+    width: 768px;
+    padding: 0 16px;
+    margin: 0 auto;
+  }
+*/
+  .section {
+    max-width: 768px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/fontab1x.jpg);
+    margin: auto;
+    padding: 112px 0;
+  }
+
+  .page-title {
+    font-size: 56px;
+    line-height: 107%;
+    max-width: 496px;
+    margin-bottom: 36px;
+  }
+}
